@@ -1,0 +1,10 @@
+
+<div class="content" role="main">
+
+  <span>Aplicación de Angular: {{title}}</span>
+
+  <input type="text" placeholder="Nombre del usuario:" [(ngModel)]="usuario"/>
+
+  <app-nombres [nombre]="usuario" (mensajeEmiter)="recibirMensajeDelHijo($event)"></app-nombres>
+
+</div>
